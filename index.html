@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validate.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <h1>facebook</h1>
+            </div>
+            <div class="form_login">
+                <div class="col">
+                    <p style="font-family:Arial, Helvetica, sans-serif; color: white; font-size: 0.8em;">Email or Phone</p>
+                </div>
+                <div class="col">
+                    <p style="font-family:Arial, Helvetica, sans-serif; color: white; font-size: 0.8em;">Password</p>
+                </div>
+                <div class="col"></div>
+                <div class="col col-text">
+                    <input type="text" name="tai_khoan">
+                </div>
+                <div class="col col-text">
+                    <input type="text" name="pass">
+                </div>
+                <div class="col col-button">
+                    <input type="button" value="Log In" id="log_in">
+                </div>
+                <div class="col choose">
+                    <input type="checkbox">  Keep me logged in
+                </div>
+                <div class="col">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main_content">
+            <div class="left_content">
+                <div class="character">
+                    <h3>Connect with friends and the world around on Facebook.</h3>
+                </div>
+                <div class="logo_character">
+                    <div class="first_line">
+                        <div class="mini_logo">
+                            <i class="fa fa-newspaper-o" style="font-size:60px; color: gray;"></i>
+                        </div>
+                        <div class="bold_character">
+                            <p><b>See photos and updates</b></p>
+                        </div>
+                        <div class="orther_character">
+                            <p>from friends in News Feed</p>
+                        </div>
+                    </div>
+                    <div class="seconde_line">
+                        <div class="mini_logo">
+                            <i class="fa fa-television" style="font-size:60px; color: gray"></i>
+                        </div>
+                        <div class="bold_character">
+                            <p><b>Share what's new</b></p>
+                        </div>
+                        <div class="orther_character">
+                            <p>in your life on your Timeline</p>
+                        </div>
+                    </div>
+                    <div class="third_line">
+                        <div class="mini_logo">
+                            <i class="fa fa-search" style="font-size:60px; color: gray"></i>
+                        </div>
+                        <div class="bold_character">
+                            <p><b>Find more</b></p>
+                        </div>
+                        <div class="orther_character">
+                            <p>of what you're looking for with Graph Search</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right_content">
+                <div class="right_character">
+                    <div class="big_character">
+                        <h2>Sign up</h2>
+                    </div>
+                    <div class="small_character">
+                        <p>It's free and always will be</p>
+                    </div>
+                </div>
+                
+                <form action="#" name="register" id="register" method="get">
+                    <table class="table">
+                        <tr>
+                            <td><input type="text" name="fname" id="fname" placeholder="First name" style="padding-left: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 16px"></td>
+                            <td><input type="text" name="lname" id="lname" placeholder="Last name" style="padding-left: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 16px"></td>
+                            <td><span id="name_error"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="email" id="email" placeholder="email or number" style="padding-left: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; width: 100%;"></td>    
+                            <td><span id="email_error"></span></td>
+                        </tr>
+                        <tr>
+                            <td  colspan="2"><input type="text" name="re_enter" id="re_enter" placeholder="Re-enter email or mobile number" style="padding-left: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; width: 100%;"></td>
+                            <td><span id="re_enter_error"></span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="pass" id="pass" placeholder="New password" style="padding-left: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; width: 100%;"></td>
+                            <td><span id="pass_error"></span></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size: 1.25em">Male<input type="radio" name="Gender" id="nam"></td>
+                            <td style="font-family:Arial, Helvetica, sans-serif; font-size: 1.25em">Female<input type="radio" name="Gender" id="nu"></td>
+                            <td><span id="gender_error"></span></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 1.25em">Birthday</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <select name="Month" id="Month" required>
+                                    <option value="">Month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">Febuary</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="Day" id="Day">
+                                    <option value="0">Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="Year" id="Year">
+                                    <option value="0">Year</option>
+                                    <option value="1">1995</option>
+                                    <option value="2">1996</option>
+                                    <option value="3">1997</option>
+                                    <option value="4">1998</option>
+                                    <option value="5">1999</option>
+                                    <option value="6">2000</option>
+                                    <option value="7">2001</option>
+                                    <option value="8">2002</option>
+                                </select>
+                            </td>
+                            <td class="why"><p><a href="#">Why do i need provide my birthday?</a></p></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <p class="term">By clicking Sign up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a> </p>
+                    <input type="button" name="join" id="join" value="Sign Up"></td>
+                </form>
+                
+                <div class="last_right_content">
+                    <p><a href="#">Create a Page</a> for a celebrity, band or business</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="top">
+            <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+                <li><a href="#">France</a></li>
+                <li><a href="#">Espanol</a></li>
+                <li><a href="#">Portugues</a></li>
+                <li><a href="#">Deutsch</a></li>
+            </ul>
+        </div>
+
+        <div class="border"></div>
+
+        <div class="bottom">
+            <ul>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Find friends</a></li>
+                <li><a href="#">Badges</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
